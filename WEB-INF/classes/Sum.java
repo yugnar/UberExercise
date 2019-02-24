@@ -22,7 +22,7 @@ public class Sum extends HttpServlet{
 
 		try{
 			double price = Double.parseDouble(req.getParameter("n1"));
-
+			
 			double totprice = price *.25;
 
 			res.setContentType("text/html");
