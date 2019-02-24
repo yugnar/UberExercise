@@ -4,7 +4,7 @@ import javax.servlet.http.*;
 
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet("/addition")
+@WebServlet("/getFee")
 public class Sum extends HttpServlet{
 
 	public void init(ServletConfig config){
@@ -21,10 +21,9 @@ public class Sum extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res){
 
 		try{
-			double number1 = Double.parseDouble(req.getParameter("n1"));
-			double number2 = Double.parseDouble(req.getParameter("n2"));
+			double price = Double.parseDouble(req.getParameter("n1"));
 
-			double result = number1 + number2;
+			double totprice = price *.25;
 
 			res.setContentType("text/html");
 			PrintWriter out = res.getWriter();
