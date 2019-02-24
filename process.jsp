@@ -10,7 +10,7 @@
 
 	<body>
 
-		The result is <c:out value="${requestScope.res}" />
+		Your total earning is $ <c:out value="${requestScope.res}" />
 
 	</body>
 
