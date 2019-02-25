@@ -24,7 +24,7 @@ public class FeeServlet extends HttpServlet{
 
 			res.setContentType("text/html");
 			PrintWriter out = res.getWriter();
-			req.setAttribute("res",result);
+			req.setAttribute("res",totprice);
 
 			RequestDispatcher disp = getServletContext().getRequestDispatcher("/fareResult.jsp");
 
